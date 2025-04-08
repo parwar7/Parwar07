@@ -1,0 +1,12 @@
+[Unit]
+Description=DOGEUSDT Bitget Bot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /root/bot.py
+WorkingDirectory=/root
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
